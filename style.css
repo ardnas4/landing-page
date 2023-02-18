@@ -10,8 +10,8 @@ body {
 }
 
 header {
-    background-color: #1f2937;
-    padding: 1em 13em;
+    background-image: url('images/PawBackground.jpg');
+    padding: 2em 13em;
 }
 
 .header-container {
@@ -23,7 +23,7 @@ header {
 #header-logo {
     font-size: 24px;
     font-weight: bold;
-    color: #F9FAF8;
+    color: #8133ef;
 }
 
 ul {
@@ -34,27 +34,27 @@ ul {
 
 .header-link-text, .hero-secondary-text {
     font-size: 18px;
-    color: #E5E7EB;
+    color: #F9FAF8;
 }
 
 a {
     text-decoration: none;
     font-size: 18px;
-    color: #E5E7EB;
+    color: #8133ef;
 }
 
 .hero-main-container {
     padding: 7em 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2em;
+    justify-content: space-between;
+    align-items:center;
+    gap: 10em;
 }
 
 .hero-main-container .left {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 2em;
 }
 
 .left #left-1 {
@@ -64,7 +64,7 @@ a {
 }
 
 .left #left-button {
-    background-color: #3882F6;
+    background-color: #8133ef;
     color: #F9FAF8;
     font-size: 18px;
     padding: 7px;
@@ -73,13 +73,25 @@ a {
 }
 
 .hero-main-container .right {
-    flex-shrink: 0;
-    width: 50%;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+}
+
+#main-penny {
+    height: 80%;
+    align-self: flex-end;
+    border: 2px solid #F9FAF8;
 }
 
 .right #right-1 {
     background-color: gray;
-    color: #E5E7EB;
+    color: #F9FAF8;
     font-size: 18px;
     text-align: center;
     display: flex;
@@ -89,7 +101,7 @@ a {
 }
 
 #some-random-info {
-    color:#1f2937;
+    color:#8133ef;
     text-align: center;
     padding: 1em;
     font-size: 36px;
@@ -100,7 +112,7 @@ a {
     display:flex;
     justify-content: center;
     align-items: center;
-    gap: 2em;
+    gap: 5em;
     margin-bottom: 6em;
 }
 
@@ -113,20 +125,27 @@ a {
 }
 
 .box {
-    width: 170px;
-    height: 170px;
-    border: 4px solid #3882F6;
+    width: 200px;
+    height: 200px;
+    border: 4px solid #d780ff;
     border-radius: 20px;
+}
+
+#penny {
+    border: 5px solid #d780ff;
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
 }
 
 .subtext {
     text-align: center;
-    color: gray;
+    color: #8133ef;
 }
 
 .thor {
-    background-color: #E5E7EB;
-    color: #1f2937;
+    background-color: #d8afff;
+    color: #8133ef;
 }
 
 .thor-container {
@@ -147,9 +166,9 @@ a {
 #author-thor {
     text-align: right;
     font-weight: bold;
-    text-align: right;
     align-self: flex-end;
     font-size: 24px;
+    color: #F9FAF8;
 }
 
 .action {
@@ -163,7 +182,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #3882F6;
+    background-color: #8133ef;
     padding: 3.5em 8em;
     border-radius: 10px;
     color: #F9FAF8;
@@ -173,7 +192,7 @@ a {
 .action-container .left {
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 5px;
 }
 
 #call-to-action {
@@ -186,7 +205,7 @@ a {
 }
 
 #button-right {
-    background-color: #3882F6;
+    background-color: #8133ef;
     border: 2px solid #F9FAF8;
     color: #F9FAF8;
     font-size: 18px;
@@ -196,14 +215,15 @@ a {
 }
 
 .footer {
-    background-color: #1f2937;
+    background-color: #d8afff;
     align-items: center;
+    justify-content: center;
     padding: 3em 20em;
+    text-align: center;
 }
 
-#copyright {
+#github {
     font-size: 18px;
-    color: #E5E7EB;
-    text-align: center;
+    color: #F9FAF8;
     font-weight: lighter;
 }
